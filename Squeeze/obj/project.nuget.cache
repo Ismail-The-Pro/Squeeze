@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yYhfXqAw1XJfVVleGVNMrbwibYFVP6zDxpiKwhmOWb6lT+S6cuwrQjxRLCDh90b4We6roT36GVup+eOd+POnvQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze Solution\\Squeeze\\Squeeze.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IsmMo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
