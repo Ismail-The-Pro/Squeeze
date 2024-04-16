@@ -1,14 +1,18 @@
-﻿namespace Squeeze.Models
-{
-    // Fil: Models/Bestilling.cs
-    public class Bestilling
-    {
-        public int BestillingId { get; set; } // Unik identifikator for bestillingen (primærnøkkel)
-        public int KundeId { get; set; } // Identifikator som refererer til kunden som la inn bestillingen (fremmednøkkel)
-        public DateTime Bestillingsdato { get; set; } // Dato og tidspunkt for når bestillingen ble lagt inn
-        public string Status { get; set; } // Status for bestillingen (f.eks., "Ny", "Under Behandling", "Klar", "Utlevert")
-        public decimal TotalPris { get; set; } // Den totale prisen for bestillingen
-        public List<Bestillingsdetalj> Bestillingsdetaljer { get; set; } // En liste over elementer i bestillingen
-    }
+﻿using Squeeze.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+public class Bestilling
+{
+    [Key]
+    public int BestillingId { get; set; }
+    [ForeignKey("Kunde")]
+    public int KundeId { get; set; }
+    public DateTime Bestillingsdato { get; set; }
+    public decimal TotalPris { get; set; }
+    public string Status { get; set; }
+    public virtual Kunde Kunde { get; set; }
+    public virtual List<Bestillingsdetalj> Bestillingsdetaljer { get; set; }
 }

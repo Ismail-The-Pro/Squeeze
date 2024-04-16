@@ -1,23 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Squeeze.Models;
 
-namespace Squeeze.DbContext
+public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext  // Use the full namespace
 {
-    
-    using Microsoft.EntityFrameworkCore;
-
-public class AppDbContext : DbContext
-{
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
     {
     }
 
-    public DbSet<Produkt> Produkter { get; set; }
+    public DbSet<Lemonade> Lemonades { get; set; }
     public DbSet<Kunde> Kunder { get; set; }
     public DbSet<Bestilling> Bestillinger { get; set; }
     public DbSet<Bestillingsdetalj> Bestillingsdetaljer { get; set; }
-    public DbSet<Rabatt> Rabatter { get; set; }
-}
 
-   
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        // Model configuration code
+    }
 }
