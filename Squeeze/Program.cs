@@ -1,3 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Squeeze.Repository.IRepository;
+using Squeeze.Repository;
+using Squeeze.Service.IService;
+using Squeeze.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +18,18 @@ builder.Services.AddSwaggerGen(c =>
         Description = "En API for håndtering av bestillinger, produkter, og kunder for Squeeze."
     });
 });
+
+// Add DbContext configuration if using Entity Framework
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Dependency Injection for services and repositories
+builder.Services.AddScoped<IBestillingService, BestillingService>();
+builder.Services.AddScoped<IBestillingRepository, BestillingRepository>();
+builder.Services.AddScoped<IKundeService, KundeService>();
+builder.Services.AddScoped<IKundeRepository, KundeRepository>();
+builder.Services.AddScoped<ILemonadeService, LemonadeService>();
+builder.Services.AddScoped<ILemonadeRepository, LemonadeRepository>();
 
 // Configure the HTTP request pipeline.
 var app = builder.Build();

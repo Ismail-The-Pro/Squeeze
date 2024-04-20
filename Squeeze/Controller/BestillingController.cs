@@ -1,79 +1,76 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 using Squeeze.Models;
+using Squeeze.Service.IService;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-[Route("api/[controller]")]
-[ApiController]
-public class BestillingController : ControllerBase
+namespace Squeeze.Controllers
 {
-    private readonly AppDbContext _context;
-
-    public BestillingController(AppDbContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class BestillingController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly IBestillingService _bestillingService;
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Bestilling>>> GetAllBestillinger()
-    {
-        return await _context.Bestillinger
-            .Include(b => b.Bestillingsdetaljer)
-                .ThenInclude(d => d.Lemonade)
-            .ToListAsync();
-    }
-
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Bestilling>> GetBestilling(int id)
-    {
-        var bestilling = await _context.Bestillinger
-            .Include(b => b.Bestillingsdetaljer)
-                .ThenInclude(d => d.Lemonade)
-            .FirstOrDefaultAsync(b => b.BestillingId == id);
-        if (bestilling == null)
+        // Constructor injection for dependency
+        public BestillingController(IBestillingService bestillingService)
         {
-            return NotFound("Bestilling ikke funnet.");
+            _bestillingService = bestillingService;
         }
-        return bestilling;
-    }
 
-    [HttpPost]
-    public async Task<ActionResult<Bestilling>> CreateBestilling([FromBody] Bestilling bestilling)
-    {
-        if (!ModelState.IsValid)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<BestillingDTO>>> GetAllBestillinger()
         {
-            return BadRequest(ModelState);
+            var bestillinger = await _bestillingService.GetAllBestillingerAsync();
+            return Ok(bestillinger);
         }
-        _context.Bestillinger.Add(bestilling);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetBestilling), new { id = bestilling.BestillingId }, bestilling);
-    }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateBestilling(int id, [FromBody] Bestilling bestilling)
-    {
-        if (id != bestilling.BestillingId || !ModelState.IsValid)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<BestillingDTO>> GetBestilling(int id)
         {
-            return BadRequest();
+            var bestilling = await _bestillingService.GetBestillingByIdAsync(id);
+            if (bestilling == null)
+            {
+                return NotFound();
+            }
+            return Ok(bestilling);
         }
-        _context.Entry(bestilling).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-        return NoContent();
-    }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteBestilling(int id)
-    {
-        var bestilling = await _context.Bestillinger.FindAsync(id);
-        if (bestilling == null)
+        [HttpPost]
+        public async Task<ActionResult<BestillingDTO>> CreateBestilling([FromBody] BestillingDTO bestillingDto)
         {
-            return NotFound();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var createdBestilling = await _bestillingService.CreateBestillingAsync(bestillingDto);
+            return CreatedAtAction(nameof(GetBestilling), new { id = createdBestilling.BestillingId }, createdBestilling);
         }
-        _context.Bestillinger.Remove(bestilling);
-        await _context.SaveChangesAsync();
-        return NoContent();
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateBestilling(int id, [FromBody] BestillingDTO bestillingDto)
+        {
+            if (id != bestillingDto.BestillingId || !ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var success = await _bestillingService.UpdateBestillingAsync(bestillingDto);  // Assuming UpdateBestillingAsync returns a Task<bool>
+            if (!success)
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBestilling(int id)
+        {
+            var success = await _bestillingService.DeleteBestillingAsync(id);  // Assuming DeleteBestillingAsync returns a Task<bool>
+            if (!success)
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
     }
 }

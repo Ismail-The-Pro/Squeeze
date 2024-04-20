@@ -1,72 +1,68 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 using Squeeze.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using Squeeze.Service;
+using Squeeze.Mapper;
+using Squeeze.Models.DTO;
+using Squeeze.Service.IService;
 
 [Route("api/[controller]")]
 [ApiController]
 public class KundeController : ControllerBase
 {
-    private readonly AppDbContext _context;
+    private readonly IKundeService _kundeService;
 
-    public KundeController(AppDbContext context)
+    public KundeController(IKundeService kundeService)
     {
-        _context = context;
+        _kundeService = kundeService;
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Kunde>>> GetKunder()
+    public async Task<ActionResult<IEnumerable<KundeDTO>>> GetKunder()
     {
-        return await _context.Kunder.ToListAsync();
+        var kunder = await _kundeService.GetAllKunderAsync();
+        var kunderDto = kunder.Select(KundeMapper.ToDTO);
+        return Ok(kunderDto);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Kunde>> GetKunde(int id)
+    public async Task<ActionResult<KundeDTO>> GetKunde(int id)
     {
-        var kunde = await _context.Kunder.FindAsync(id);
+        var kunde = await _kundeService.GetKundeByIdAsync(id);
         if (kunde == null)
         {
             return NotFound();
         }
-        return kunde;
+        return KundeMapper.ToDTO(kunde);
     }
 
     [HttpPost]
-    public async Task<ActionResult<Kunde>> CreateKunde([FromBody] Kunde kunde)
+    public async Task<ActionResult<KundeDTO>> CreateKunde([FromBody] KundeDTO kundeDto)
     {
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }
-        _context.Kunder.Add(kunde);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetKunde), new { id = kunde.KundeId }, kunde);
+        var kunde = KundeMapper.FromDTO(kundeDto);
+        var createdKunde = await _kundeService.CreateKundeAsync(kunde);
+        return CreatedAtAction(nameof(GetKunde), new { id = createdKunde.KundeId }, KundeMapper.ToDTO(createdKunde));
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateKunde(int id, [FromBody] Kunde kunde)
+    public async Task<IActionResult> UpdateKunde(int id, [FromBody] KundeDTO kundeDto)
     {
-        if (id != kunde.KundeId || !ModelState.IsValid)
+        if (id != kundeDto.KundeId || !ModelState.IsValid)
         {
             return BadRequest();
         }
-        _context.Entry(kunde).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
+        var kunde = KundeMapper.FromDTO(kundeDto);
+        await _kundeService.UpdateKundeAsync(kunde);
         return NoContent();
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteKunde(int id)
     {
-        var kunde = await _context.Kunder.FindAsync(id);
-        if (kunde == null)
-        {
-            return NotFound();
-        }
-        _context.Kunder.Remove(kunde);
-        await _context.SaveChangesAsync();
+        await _kundeService.DeleteKundeAsync(id);
         return NoContent();
     }
 }
