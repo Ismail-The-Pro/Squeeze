@@ -11,7 +11,7 @@ public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext  // Use the 
     public DbSet<Lemonade> Lemonades { get; set; }
     public DbSet<Kunde> Kunder { get; set; }
     public DbSet<Bestilling> Bestillinger { get; set; }
-    public DbSet<Bestillingsdetalj> Bestillingsdetaljer { get; set; }
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
