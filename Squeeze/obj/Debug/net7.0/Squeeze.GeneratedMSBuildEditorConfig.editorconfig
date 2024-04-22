@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Squeeze
 build_property.RootNamespace = Squeeze
-build_property.ProjectDir = C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\
+build_property.ProjectDir = C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze
+build_property.MSBuildProjectDirectory = C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/Error.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/Index.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/Privacy.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/_ViewImports.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/_ViewStart.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/IsmMo/OneDrive/Dokumenter/Squeeze med git/Squeeze/Pages/Shared/_Layout.cshtml]
+[C:/Users/Turie/OneDrive/Dokumenter/Squuezezoom/Squeeze/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-je379udk8y

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {}
+    "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {
+    "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
+        "projectUniqueName": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj",
         "projectName": "Squeeze",
-        "projectPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
-        "packagesPath": "C:\\Users\\IsmMo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\obj\\",
+        "projectPath": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj",
+        "packagesPath": "C:\\Users\\Turie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IsmMo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Turie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[1.17.2, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -92,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
