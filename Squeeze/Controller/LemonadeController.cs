@@ -4,6 +4,7 @@ using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 using Squeeze.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -16,6 +17,7 @@ public class LemonadeController : ControllerBase
         _context = context;
     }
 
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Lemonade>>> GetLemonades()
     {
@@ -33,6 +35,7 @@ public class LemonadeController : ControllerBase
         return lemonade;
     }
 
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<Lemonade>> CreateLemonade([FromBody] Lemonade lemonade)
     {
@@ -41,6 +44,7 @@ public class LemonadeController : ControllerBase
         return CreatedAtAction(nameof(GetLemonade), new { id = lemonade.LemonadeId }, lemonade);
     }
 
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateLemonade(int id, [FromBody] Lemonade lemonade)
     {
@@ -54,6 +58,7 @@ public class LemonadeController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteLemonade(int id)
     {

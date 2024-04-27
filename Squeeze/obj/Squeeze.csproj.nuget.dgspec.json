@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj": {}
+    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj": {
+    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj",
+        "projectUniqueName": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
         "projectName": "Squeeze",
-        "projectPath": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\Squeeze.csproj",
-        "packagesPath": "C:\\Users\\Turie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Turie\\OneDrive\\Dokumenter\\Squuezezoom\\Squeeze\\obj\\",
+        "projectPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
+        "packagesPath": "C:\\Users\\IsmMo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Turie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IsmMo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,9 +44,13 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -68,13 +72,31 @@
               "target": "Package",
               "version": "[1.17.2, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.3.0, )"
             },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.*, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -96,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

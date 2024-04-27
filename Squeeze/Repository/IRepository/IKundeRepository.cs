@@ -3,6 +3,7 @@ using Squeeze.Models.DTO;
 
 public interface IKundeRepository
 {
+    Task<Kunde> AddAsync(Kunde kunde);
     Task<IEnumerable<KundeDTO>> GetAllKunderAsync();
     Task<KundeDTO> GetKundeByIdAsync(int id);
     Task<KundeDTO> CreateKundeAsync(KundeDTO kundeDto);

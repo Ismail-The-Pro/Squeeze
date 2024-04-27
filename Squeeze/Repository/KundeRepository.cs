@@ -14,6 +14,13 @@ namespace Squeeze.Repository
             _context = context;
         }
 
+        public async Task<Kunde> AddAsync(Kunde kunde)
+        {
+            await _context.Kunder.AddAsync(kunde);
+            await _context.SaveChangesAsync();
+            return kunde;
+        }
+
         public async Task<KundeDTO> CreateKundeAsync(KundeDTO kundeDto)
         {
             var kunde = new Kunde { Navn = kundeDto.Navn, Epost = kundeDto.Epost, Telefon = kundeDto.Telefon };

@@ -14,5 +14,5 @@ public class Bestilling
     public decimal TotalPris { get; set; }
     public string Status { get; set; }
     public virtual Kunde Kunde { get; set; }
-    public virtual List<Bestillingsdetalj> Bestillingsdetaljer { get; set; }
+    
 }

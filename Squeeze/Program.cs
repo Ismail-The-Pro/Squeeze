@@ -19,9 +19,15 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Add DbContext configuration if using Entity Framework
+// Add DbContext configuration if using Entity Framework with MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    new MySqlServerVersion(new Version(8, 0, 21))));
+// Pass på å justere versjonen til den faktiske MySQL server versjonen du bruker
+
+builder.Services.AddAuthentication("BasicAuthentication")
+    .AddScheme;
+
 
 // Dependency Injection for services and repositories
 builder.Services.AddScoped<IBestillingService, BestillingService>();
@@ -44,6 +50,7 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseMiddleware<BasicAuthMiddleware>();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

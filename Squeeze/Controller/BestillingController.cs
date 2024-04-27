@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Squeeze.Models;
 using Squeeze.Service.IService;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace Squeeze.Controllers
             _bestillingService = bestillingService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BestillingDTO>>> GetAllBestillinger()
         {
@@ -25,6 +27,7 @@ namespace Squeeze.Controllers
             return Ok(bestillinger);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<BestillingDTO>> GetBestilling(int id)
         {
@@ -36,6 +39,7 @@ namespace Squeeze.Controllers
             return Ok(bestilling);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<BestillingDTO>> CreateBestilling([FromBody] BestillingDTO bestillingDto)
         {
@@ -47,6 +51,7 @@ namespace Squeeze.Controllers
             return CreatedAtAction(nameof(GetBestilling), new { id = createdBestilling.BestillingId }, createdBestilling);
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBestilling(int id, [FromBody] BestillingDTO bestillingDto)
         {
@@ -62,6 +67,7 @@ namespace Squeeze.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBestilling(int id)
         {

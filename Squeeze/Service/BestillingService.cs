@@ -12,17 +12,39 @@ namespace Squeeze.Service
     {
 
         private readonly IBestillingRepository _repository;
+        private readonly AppDbContext _context;
 
-        public BestillingService(IBestillingRepository repository)
+
+        public BestillingService(IBestillingRepository repository, AppDbContext context)
         {
             _repository = repository;
+            _context = context;
+
         }
 
         public async Task<BestillingDTO> CreateBestillingAsync(BestillingDTO bestillingDto)
         {
-            var bestilling = BestillingMapper.FromDTO(bestillingDto);
-            var createdBestilling = await _repository.AddAsync(bestilling);
-            return BestillingMapper.ToDTO(createdBestilling);
+            if (bestillingDto == null)
+            {
+                throw new ArgumentNullException(nameof(bestillingDto));
+            }
+
+            // Bruker BestillingMapper for å konvertere DTO til entitet
+            var bestilling = BestillingMapper.ToEntity(bestillingDto);
+
+            // Validerer at kunden eksisterer
+            var kunde = await _context.Kunder.FindAsync(bestilling.KundeId);
+            if (kunde == null)
+            {
+                throw new KeyNotFoundException("Kunden finnes ikke.");
+            }
+
+            // Legger til og lagrer bestillingen
+            _context.Bestillinger.Add(bestilling);
+            await _context.SaveChangesAsync();
+
+            // Bruker BestillingMapper for å konvertere entitet tilbake til DTO
+            return BestillingMapper.ToDTO(bestilling);
         }
 
         public async Task<bool> DeleteBestillingAsync(int id)
@@ -44,7 +66,7 @@ namespace Squeeze.Service
 
         public async Task<bool> UpdateBestillingAsync(BestillingDTO bestillingDto)
         {
-            var bestilling = BestillingMapper.FromDTO(bestillingDto);
+            var bestilling = BestillingMapper.ToEntity(bestillingDto);
             return await _repository.UpdateAsync(bestilling);
         }
     }

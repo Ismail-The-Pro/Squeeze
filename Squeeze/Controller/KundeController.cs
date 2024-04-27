@@ -4,6 +4,7 @@ using Squeeze.Service;
 using Squeeze.Mapper;
 using Squeeze.Models.DTO;
 using Squeeze.Service.IService;
+using Microsoft.AspNetCore.Authorization;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -16,6 +17,7 @@ public class KundeController : ControllerBase
         _kundeService = kundeService;
     }
 
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<KundeDTO>>> GetKunder()
     {
@@ -24,6 +26,7 @@ public class KundeController : ControllerBase
         return Ok(kunderDto);
     }
 
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<KundeDTO>> GetKunde(int id)
     {
@@ -35,6 +38,7 @@ public class KundeController : ControllerBase
         return KundeMapper.ToDTO(kunde);
     }
 
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<KundeDTO>> CreateKunde([FromBody] KundeDTO kundeDto)
     {
@@ -47,6 +51,7 @@ public class KundeController : ControllerBase
         return CreatedAtAction(nameof(GetKunde), new { id = createdKunde.KundeId }, KundeMapper.ToDTO(createdKunde));
     }
 
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateKunde(int id, [FromBody] KundeDTO kundeDto)
     {
@@ -59,6 +64,7 @@ public class KundeController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteKunde(int id)
     {

@@ -1,15 +1,9 @@
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.csproj.AssemblyReference.cache
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfoInputs.cache
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfo.cs
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.csproj.CoreCompileInputs.cache
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cache
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cs
-C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\appsettings.json
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Squeeze.staticwebassets.runtime.json
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Squeeze.exe
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Squeeze.deps.json
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Squeeze.runtimeconfig.json
@@ -17,9 +11,15 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Sque
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Squeeze.pdb
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Castle.Core.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\EntityFramework.SqlServer.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\EntityFramework.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Google.Protobuf.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Humanizer.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\K4os.Hash.xxHash.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -40,6 +40,10 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Micr
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Moq.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\MySql.Data.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -53,6 +57,11 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\Syst
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.abstractions.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.assert.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.core.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\xunit.execution.dotnet.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\ZstdSharp.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -60,6 +69,11 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runt
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
@@ -70,6 +84,15 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runt
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.csproj.AssemblyReference.cache
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfoInputs.cache
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfo.cs
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.csproj.CoreCompileInputs.cache
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cache
+C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cs
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.Squeeze.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.build.Squeeze.props
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Squeeze.props
@@ -86,103 +109,3 @@ C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\refi
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.pdb
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\Squeeze.genruntimeconfig.cache
 C:\Users\IsmMo\OneDrive\Dokumenter\Squeeze med git\Squeeze\obj\Debug\net7.0\ref\Squeeze.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\appsettings.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.staticwebassets.runtime.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.exe
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.deps.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.runtimeconfig.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Squeeze.pdb
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Azure.Core.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Azure.Identity.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\EntityFramework.SqlServer.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\EntityFramework.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Google.Protobuf.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Humanizer.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\K4os.Compression.LZ4.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\K4os.Hash.xxHash.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\MySql.Data.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Runtime.Caching.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Security.Permissions.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\ZstdSharp.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.csproj.AssemblyReference.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfoInputs.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.AssemblyInfo.cs
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.csproj.CoreCompileInputs.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.RazorAssemblyInfo.cs
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.Squeeze.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.build.Squeeze.props
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Squeeze.props
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Squeeze.props
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\scopedcss\bundle\Squeeze.styles.css
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\scopedcss\projectbundle\Squeeze.bundle.scp.css
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.csproj.CopyComplete
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\refint\Squeeze.dll
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.pdb
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\Squeeze.genruntimeconfig.cache
-C:\Users\Turie\OneDrive\Dokumenter\Squuezezoom\Squeeze\obj\Debug\net7.0\ref\Squeeze.dll
