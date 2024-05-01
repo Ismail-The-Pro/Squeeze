@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Squeeze.Models;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<IdentityUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
@@ -16,7 +18,6 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // Definer desimal presisjon og lengder for strengtyper for MySQL
         modelBuilder.Entity<Bestilling>(entity =>
         {
             entity.Property(e => e.TotalPris)
@@ -24,7 +25,7 @@ public class AppDbContext : DbContext
 
             entity.Property(e => e.Status)
                   .IsRequired()
-                  .HasColumnType("VARCHAR(255)");  // Setter en grense for Statusfeltets lengde
+                  .HasColumnType("VARCHAR(255)");
 
             entity.HasOne(d => d.Kunde)
                   .WithMany()
@@ -53,17 +54,33 @@ public class AppDbContext : DbContext
         {
             entity.Property(e => e.Name)
                   .IsRequired()
-                  .HasColumnType("VARCHAR(255)");  // Definerer VARCHAR for Navn
+                  .HasColumnType("VARCHAR(255)");
 
             entity.Property(e => e.Price)
-                  .HasColumnType("decimal(18, 2)");  // Angir presisjon for Pris
+                  .HasColumnType("decimal(18, 2)");
 
             entity.Property(e => e.IsAvailable)
-                  .HasColumnType("tinyint(1)");  // Bruker tinyint for boolean-verdier i MySQL
+                  .HasColumnType("tinyint(1)");
 
             entity.Property(e => e.Stock)
                   .HasColumnType("int");
         });
+
+        // Ekstra konfigurasjoner for Identity-tabeller
+        modelBuilder.Entity<IdentityUser>()
+            .Property(u => u.UserName)
+            .HasMaxLength(256);
+
+        modelBuilder.Entity<IdentityUser>()
+            .Property(u => u.NormalizedUserName)
+            .HasMaxLength(256);
+
+        modelBuilder.Entity<IdentityUser>()
+            .Property(u => u.Email)
+            .HasMaxLength(256);
+
+        modelBuilder.Entity<IdentityUser>()
+            .Property(u => u.NormalizedEmail)
+            .HasMaxLength(256);
     }
 }
-

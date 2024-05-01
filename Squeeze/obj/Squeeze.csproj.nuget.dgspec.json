@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {}
+    "C:\\Users\\IsmMo\\Ny mappe\\Squeeze\\Squeeze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj": {
+    "C:\\Users\\IsmMo\\Ny mappe\\Squeeze\\Squeeze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
+        "projectUniqueName": "C:\\Users\\IsmMo\\Ny mappe\\Squeeze\\Squeeze.csproj",
         "projectName": "Squeeze",
-        "projectPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\Squeeze.csproj",
+        "projectPath": "C:\\Users\\IsmMo\\Ny mappe\\Squeeze\\Squeeze.csproj",
         "packagesPath": "C:\\Users\\IsmMo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IsmMo\\OneDrive\\Dokumenter\\Squeeze med git\\Squeeze\\obj\\",
+        "outputPath": "C:\\Users\\IsmMo\\Ny mappe\\Squeeze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IsmMo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,14 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -80,6 +88,10 @@
               "target": "Package",
               "version": "[8.3.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.*, )"
@@ -87,6 +99,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",

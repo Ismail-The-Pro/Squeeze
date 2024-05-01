@@ -17,7 +17,7 @@ public class LemonadeController : ControllerBase
         _context = context;
     }
 
-    [Authorize]
+    
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Lemonade>>> GetLemonades()
     {
@@ -35,7 +35,7 @@ public class LemonadeController : ControllerBase
         return lemonade;
     }
 
-    [Authorize]
+    
     [HttpPost]
     public async Task<ActionResult<Lemonade>> CreateLemonade([FromBody] Lemonade lemonade)
     {

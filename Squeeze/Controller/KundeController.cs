@@ -17,7 +17,7 @@ public class KundeController : ControllerBase
         _kundeService = kundeService;
     }
 
-    [Authorize]
+    
     [HttpGet]
     public async Task<ActionResult<IEnumerable<KundeDTO>>> GetKunder()
     {
@@ -26,7 +26,7 @@ public class KundeController : ControllerBase
         return Ok(kunderDto);
     }
 
-    [Authorize]
+    
     [HttpGet("{id}")]
     public async Task<ActionResult<KundeDTO>> GetKunde(int id)
     {
@@ -38,7 +38,7 @@ public class KundeController : ControllerBase
         return KundeMapper.ToDTO(kunde);
     }
 
-    [Authorize]
+    
     [HttpPost]
     public async Task<ActionResult<KundeDTO>> CreateKunde([FromBody] KundeDTO kundeDto)
     {

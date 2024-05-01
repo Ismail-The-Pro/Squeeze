@@ -19,7 +19,7 @@ namespace Squeeze.Controllers
             _bestillingService = bestillingService;
         }
 
-        [Authorize]
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BestillingDTO>>> GetAllBestillinger()
         {
@@ -27,7 +27,7 @@ namespace Squeeze.Controllers
             return Ok(bestillinger);
         }
 
-        [Authorize]
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<BestillingDTO>> GetBestilling(int id)
         {
@@ -39,7 +39,7 @@ namespace Squeeze.Controllers
             return Ok(bestilling);
         }
 
-        [Authorize]
+        
         [HttpPost]
         public async Task<ActionResult<BestillingDTO>> CreateBestilling([FromBody] BestillingDTO bestillingDto)
         {
